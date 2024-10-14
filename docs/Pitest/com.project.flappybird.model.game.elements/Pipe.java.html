@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Pipe.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.project.flappybird.model.game.elements;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.project.flappybird.model.Position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.ArrayList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class Pipe extends Element {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private final List&#60;Position&#62; up = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private final List&#60;Position&#62; down = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final int height;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final int space;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private boolean passed;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Pipe(int x, int y, int height, int space) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        super(x, y);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.height = height;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.space = space;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.passed = false;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_20'/>
+20
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_20'>1</a>
+<span>
+1. &#60;init&#62; : removed call to com/project/flappybird/model/game/elements/Pipe::createPipeParts &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        createPipeParts();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public List&#60;Position&#62; getUp() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_24'/>
+24
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_24'>1</a>
+<span>
+1. getUp : replaced return value with Collections.emptyList for com/project/flappybird/model/game/elements/Pipe::getUp &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return up;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public List&#60;Position&#62; getDown() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_28'/>
+28
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_28'>1</a>
+<span>
+1. getDown : replaced return value with Collections.emptyList for com/project/flappybird/model/game/elements/Pipe::getDown &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return down;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private void createPipeParts() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_32'/>
+32
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_32'>4</a>
+<span>
+1. createPipeParts : changed conditional boundary &rarr; SURVIVED<br/>
+2. createPipeParts : Replaced integer multiplication with division &rarr; SURVIVED<br/>
+3. createPipeParts : negated conditional &rarr; SURVIVED<br/>
+4. createPipeParts : Replaced integer division with multiplication &rarr; TIMED_OUT<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        for (int y = 0; y &#60; 8 * (height / 10); y++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_34'/>
+34
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_34'>4</a>
+<span>
+1. createPipeParts : changed conditional boundary &rarr; SURVIVED<br/>
+2. createPipeParts : Replaced integer division with multiplication &rarr; SURVIVED<br/>
+3. createPipeParts : Replaced integer subtraction with addition &rarr; KILLED<br/>
+4. createPipeParts : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (y &#60; super.getPosition().getY() - space/2){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                up.add(new Position(super.getPosition().getX(), y));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_38'/>
+38
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_38'>4</a>
+<span>
+1. createPipeParts : changed conditional boundary &rarr; SURVIVED<br/>
+2. createPipeParts : Replaced integer division with multiplication &rarr; SURVIVED<br/>
+3. createPipeParts : Replaced integer addition with subtraction &rarr; KILLED<br/>
+4. createPipeParts : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (y &#62; super.getPosition().getY() + space/2){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                down.add(new Position(super.getPosition().getX(),y));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean getPass() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_45'>2</a>
+<span>
+1. getPass : replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::getPass &rarr; KILLED<br/>
+2. getPass : replaced boolean return with true for com/project/flappybird/model/game/elements/Pipe::getPass &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return this.passed;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setPass(boolean passed) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.passed = passed;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void move(Position position) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_53'/>
+53
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_53'>1</a>
+<span>
+1. move : removed call to com/project/flappybird/model/game/elements/Element::setPosition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        super.setPosition(position);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_54'/>
+54
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_54'>1</a>
+<span>
+1. move : removed call to java/util/List::clear &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        up.clear();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_55'/>
+55
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_55'>1</a>
+<span>
+1. move : removed call to java/util/List::clear &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        down.clear();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_56'/>
+56
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_56'>1</a>
+<span>
+1. move : removed call to com/project/flappybird/model/game/elements/Pipe::createPipeParts &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        createPipeParts();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean canHit(Position position) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_61'/>
+61
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_61'>1</a>
+<span>
+1. canHit : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (position.getRight().getX() == super.getPosition().getX()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_62'/>
+62
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_62'>5</a>
+<span>
+1. canHit : changed conditional boundary &rarr; SURVIVED<br/>
+2. canHit : Replaced integer division with multiplication &rarr; KILLED<br/>
+3. canHit : Replaced integer subtraction with addition &rarr; KILLED<br/>
+4. canHit : negated conditional &rarr; KILLED<br/>
+5. canHit : replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (position.getY() &#60;= super.getPosition().getY() - space/2) return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_63'/>
+63
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_63'>5</a>
+<span>
+1. canHit : changed conditional boundary &rarr; KILLED<br/>
+2. canHit : Replaced integer division with multiplication &rarr; KILLED<br/>
+3. canHit : Replaced integer addition with subtraction &rarr; KILLED<br/>
+4. canHit : negated conditional &rarr; KILLED<br/>
+5. canHit : replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (position.getY() &#62;= super.getPosition().getY() + space/2) return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_66'/>
+66
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_66'>1</a>
+<span>
+1. canHit : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (position.getX() == super.getPosition().getX()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_67'/>
+67
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_67'>5</a>
+<span>
+1. canHit : changed conditional boundary &rarr; SURVIVED<br/>
+2. canHit : Replaced integer division with multiplication &rarr; KILLED<br/>
+3. canHit : Replaced integer subtraction with addition &rarr; KILLED<br/>
+4. canHit : negated conditional &rarr; KILLED<br/>
+5. canHit : replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (position.getUp().getY() &#60; super.getPosition().getY() - space/2) return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_68'/>
+68
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_68'>5</a>
+<span>
+1. canHit : changed conditional boundary &rarr; SURVIVED<br/>
+2. canHit : Replaced integer division with multiplication &rarr; KILLED<br/>
+3. canHit : Replaced integer addition with subtraction &rarr; KILLED<br/>
+4. canHit : negated conditional &rarr; KILLED<br/>
+5. canHit : replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (position.getDown().getY() &#62; super.getPosition().getY() + space/2) return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_70'/>
+70
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_70'>1</a>
+<span>
+1. canHit : replaced boolean return with true for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@42c2f48c_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_20'>20</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_20'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> removed call to com/project/flappybird/model/game/elements/Pipe::createPipeParts &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_24'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUp<br/><b>Killed by : </b>none</span></span> replaced return value with Collections.emptyList for com/project/flappybird/model/game/elements/Pipe::getUp &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_28'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getDown<br/><b>Killed by : </b>none</span></span> replaced return value with Collections.emptyList for com/project/flappybird/model/game/elements/Pipe::getDown &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_32'>32</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_32'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='TIMED_OUT'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>none</span></span> Replaced integer division with multiplication &rarr; TIMED_OUT</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>none</span></span> Replaced integer multiplication with division &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_34'>34</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_34'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>none</span></span> Replaced integer division with multiplication &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>com.project.flappybird.model.Game.elements.PipeTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.elements.PipeTest]/[method:move()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>com.project.flappybird.model.Game.elements.PipeTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.elements.PipeTest]/[method:move()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_38'>38</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_38'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>none</span></span> Replaced integer division with multiplication &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>com.project.flappybird.model.Game.elements.PipeTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.elements.PipeTest]/[method:move()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>createPipeParts<br/><b>Killed by : </b>com.project.flappybird.model.Game.elements.PipeTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.elements.PipeTest]/[method:move()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPass<br/><b>Killed by : </b>com.project.flappybird.controller.Game.BirdControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.BirdControllerTest]/[method:stepUp()]</span></span> replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::getPass &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getPass<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:passedPipe()]</span></span> replaced boolean return with true for com/project/flappybird/model/game/elements/Pipe::getPass &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_53'>53</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_53'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>move<br/><b>Killed by : </b>com.project.flappybird.model.Game.elements.PipeTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.elements.PipeTest]/[method:move()]</span></span> removed call to com/project/flappybird/model/game/elements/Element::setPosition &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_54'>54</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_54'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>move<br/><b>Killed by : </b>com.project.flappybird.model.Game.elements.PipeTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.elements.PipeTest]/[method:move()]</span></span> removed call to java/util/List::clear &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_55'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>move<br/><b>Killed by : </b>com.project.flappybird.model.Game.elements.PipeTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.elements.PipeTest]/[method:move()]</span></span> removed call to java/util/List::clear &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_56'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>move<br/><b>Killed by : </b>none</span></span> removed call to com/project/flappybird/model/game/elements/Pipe::createPipeParts &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_61'>61</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_61'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToGround()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_62'>62</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_62'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> Replaced integer division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_63'>63</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_63'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.controller.Game.PipeControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.PipeControllerTest]/[method:hit()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> Replaced integer division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_66'>66</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_66'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToGround()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_67'>67</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_67'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> Replaced integer division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_68'>68</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_68'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> Replaced integer division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()]</span></span> replaced boolean return with false for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@42c2f48c_70'>70</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@42c2f48c_70'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>canHit<br/><b>Killed by : </b>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToGround()]</span></span> replaced boolean return with true for com/project/flappybird/model/game/elements/Pipe::canHit &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.project.flappybird.viewer.Game.PipeViewerTest.[engine:junit-jupiter]/[class:com.project.flappybird.viewer.Game.PipeViewerTest]/[method:drawElement()] (1 ms)</li><li>com.project.flappybird.viewer.Game.ArenaViewerTest.[engine:junit-jupiter]/[class:com.project.flappybird.viewer.Game.ArenaViewerTest]/[method:drawGrounds()] (2 ms)</li><li>com.project.flappybird.controller.Game.BirdControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.BirdControllerTest]/[method:birdHitPipe()] (1 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:setBest()] (0 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:increaseScore()] (0 ms)</li><li>com.project.flappybird.controller.Game.GroundControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.GroundControllerTest]/[method:notMoving()] (0 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToGround()] (0 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:getLevel()] (0 ms)</li><li>com.project.flappybird.controller.Game.PipeControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.PipeControllerTest]/[method:notMoving()] (0 ms)</li><li>com.project.flappybird.controller.Game.PipeControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.PipeControllerTest]/[method:stopped()] (1 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:isEmptyToPipe()] (0 ms)</li><li>com.project.flappybird.controller.Menu.MenuInitialControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Menu.MenuInitialControllerTest]/[method:selectStart()] (1 ms)</li><li>com.project.flappybird.model.Game.elements.PipeTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.elements.PipeTest]/[method:move()] (0 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:verifyPipes()] (1 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:passedPipe()] (1 ms)</li><li>com.project.flappybird.controller.Game.ArenaControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.ArenaControllerTest]/[method:step()] (2 ms)</li><li>com.project.flappybird.state.MenuStateTest.[engine:junit-jupiter]/[class:com.project.flappybird.state.MenuStateTest]/[method:menuInitialStep()] (2 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:getPipeSpeed()] (0 ms)</li><li>com.project.flappybird.controller.Game.ArenaControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.ArenaControllerTest]/[method:quit()] (188 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaBuilderTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaBuilderTest]/[method:createArena()] (0 ms)</li><li>com.project.flappybird.controller.Game.BirdControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.BirdControllerTest]/[method:stepDown()] (1 ms)</li><li>com.project.flappybird.controller.Game.GroundControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.GroundControllerTest]/[method:moving()] (1 ms)</li><li>com.project.flappybird.controller.Game.PipeControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.PipeControllerTest]/[method:needPipes()] (1 ms)</li><li>com.project.flappybird.controller.Game.BirdControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.BirdControllerTest]/[method:stepUp()] (2 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:getGravityLimity()] (0 ms)</li><li>com.project.flappybird.controller.Game.PipeControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.PipeControllerTest]/[method:hit()] (1 ms)</li><li>com.project.flappybird.viewer.Game.ArenaViewerTest.[engine:junit-jupiter]/[class:com.project.flappybird.viewer.Game.ArenaViewerTest]/[method:drawPipes()] (9 ms)</li><li>com.project.flappybird.controller.Game.PipeControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.PipeControllerTest]/[method:moving()] (1 ms)</li><li>com.project.flappybird.viewer.Game.ArenaViewerTest.[engine:junit-jupiter]/[class:com.project.flappybird.viewer.Game.ArenaViewerTest]/[method:refreshAndClear()] (2 ms)</li><li>com.project.flappybird.model.Game.arena.ArenaTest.[engine:junit-jupiter]/[class:com.project.flappybird.model.Game.arena.ArenaTest]/[method:gravity()] (0 ms)</li><li>com.project.flappybird.state.GameStateTest.[engine:junit-jupiter]/[class:com.project.flappybird.state.GameStateTest]/[method:step()] (11 ms)</li><li>com.project.flappybird.viewer.Game.ArenaViewerTest.[engine:junit-jupiter]/[class:com.project.flappybird.viewer.Game.ArenaViewerTest]/[method:drawElements()] (2 ms)</li><li>com.project.flappybird.controller.Game.GroundControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.GroundControllerTest]/[method:renew()] (1 ms)</li><li>com.project.flappybird.viewer.Game.ArenaViewerTest.[engine:junit-jupiter]/[class:com.project.flappybird.viewer.Game.ArenaViewerTest]/[method:drawBird()] (3 ms)</li><li>com.project.flappybird.controller.Game.BirdControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.BirdControllerTest]/[method:birdHitGround()] (1 ms)</li><li>com.project.flappybird.controller.Game.BirdControllerTest.[engine:junit-jupiter]/[class:com.project.flappybird.controller.Game.BirdControllerTest]/[method:stepUpStarting()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.9.4
+
+</body>
+</html>
