@@ -1,4 +1,6 @@
-# FLAPPYBIRD
+# Software Design and Testing Laboratory
+
+## FLAPPYBIRD
 
 > **WELCOME TO FLAPPYBIRD!**  
 
